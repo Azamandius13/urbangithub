@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+    <h1>Список задач</h1>
+    <div class="inputBox">
+        <input class="taskinput" placeholder="Введите текст задачи">
+        <button class="addTaskButton">Добавить задачу</button>
+    </div>
+    <div class="filterButtonContainer">
+        <div class="radio-group">
+            <label class="radio-button">
+                <input type="radio" name="option" value="option1" class="filterstart" checked>
+                <span class="radio-label showallbutton">Показать все</span>
+            </label>
+    
+            <label class="radio-button">
+                <input type="radio" name="option" value="option2" class="filterShowDone" >
+                <span class="radio-label showDone">Показать выполненные</span>
+            </label>
+    
+            <label class="radio-button">
+                <input type="radio" name="option" value="option3" class="filterShowUnDone">
+                <span class="radio-label showundone">Показать невыполненные</span>
+            </label>
+        </div>
+    </div>
+    <ul class="tasklist">
+        
+    </ul>  
+
+</body>
+
+<script src="./script.js"></script>
+
+</html>

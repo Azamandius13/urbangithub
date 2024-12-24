@@ -1,0 +1,172 @@
+* {
+    background-color: black;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.task {
+    display: flex;
+    gap: 20px;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    margin-top:10px;
+    margin-bottom: 10px;
+}
+
+.tasklist {
+    padding-left: 0;
+}
+
+.editTaskButton {
+    height: 29px;
+    background-color: #8b00ff;
+    border-radius: 10px;
+}
+
+.deleteTaskButton {
+    height: 29px;
+    background-color: #8b00ff;
+    border-radius: 20px;
+    cursor :pointer;
+}
+ 
+.taskinput {
+    width: 600px;
+    height: 30px ;
+    border-radius: 10px;
+    background-color: white;
+    font-size: 20px;
+    color:black;
+}
+
+.addTaskButton {
+    margin-left: 10px;
+    font-size: 20px;
+    border-radius: 10px;
+    height: 40px ;
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: #8b00ff;
+    color: white;
+    cursor:pointer;
+}
+
+.inputBox {
+    display : flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+}
+
+.taskTitle {
+    font-size: 20px;
+}
+.TaskParagraph {
+    border-style: none;
+    font-size: 20px;
+    width: 650px;
+    outline-color: #8b00ff;
+}
+
+.TaskParagraphOutline {
+    outline: none;
+}
+
+.TaskParagraphBorder {
+    outline-style: none;
+    border-style: solid;
+    border-color: #8b00ff;
+    border-radius: 20px ;
+    animation: blinker 1s linear infinite;
+}
+
+@keyframes blinker {
+    50% {
+      opacity: 0.6;
+    }
+  }
+
+.TaskParagraph:hover {
+    cursor: pointer;
+}
+
+.taskcheckbox {
+    width: 20px;
+    height: 20px;
+    border-radius: 30px;
+    background-color: #8b00ff;
+}
+
+.custom-checkbox {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-color: #e0e0e0; 
+    border: 2px solid #bbb;
+    border-radius: 40px;
+    position: relative;
+    cursor: pointer;
+    margin-right: 10px; 
+}
+
+.custom-checkbox_checked {
+    background-color: #8b00ff; 
+}
+
+input[type="checkbox"] {
+    display: none; 
+}
+
+input[type="checkbox"]:checked + .custom-checkbox {
+    background-color:#8b00ff;
+}
+
+.taskDone {
+    text-decoration: line-through;
+    color : #8b00ff;
+}
+
+.filterButtonContainer {
+    margin-top : 20px;
+}
+
+
+.radio-group {
+    display: flex;
+    margin: 20px 0;
+}
+.radio-button {
+    margin-right: 10px;
+}
+input[type="radio"] {
+    display: none; 
+}
+.radio-label {
+    padding: 10px 20px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+input[type="radio"]:checked + .radio-label {
+    background-color: none;
+    color: #8b00ff;
+    border-color: #8b00ff; ;
+}
